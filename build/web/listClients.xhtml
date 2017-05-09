@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:fcore="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+        
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        
+        <title>RWDoors</title>
+        
+        
+
+        <!-- Theme CSS -->
+        <link href="css/orderStyle.css" rel="stylesheet"/>
+        <link href="css/new-age.css" rel="stylesheet"/>
+        <link href="css/addClient.css" rel="stylesheet"/>
+        
+        
+        
+    </h:head>
+    <h:body class = "backPic">
+        <center>
+            <fcore:view>
+                <div class="crazyForm" style="width:60%">
+                <center>
+                
+            <fcore:view>
+                
+                <h:form>
+                    <h1>Client Information</h1>
+                    <h:dataTable var="list" value="#{listClients.getAllClients()}" 
+                                styleClass="order-table"
+                                headerClass="order-table-header"
+                                rowClasses="order-table-odd-row,order-table-even-row"
+                                >
+                        <h:column>
+                            <fcore:facet name="header">Client Id</fcore:facet>
+                            <h:outputText value="#{list.clientID}"/>
+                        </h:column>
+                        <h:column>
+                            <fcore:facet name="header">Client First Name</fcore:facet>
+                            <h:outputText value="#{list.firstName}"/>
+                        </h:column>
+                        <h:column>
+                            <fcore:facet name="header">Client Last Name</fcore:facet>
+                            <h:outputText value="#{list.lastName}"/>
+                        </h:column>
+                        <h:column>
+                            <fcore:facet name="header">Email</fcore:facet>
+                            <h:outputText value="#{list.email}"/>
+                        </h:column>
+                        <h:column>
+                            <fcore:facet name="header">Phone</fcore:facet>
+                            <h:outputText value="#{list.phone}"/>
+                        </h:column>
+                        <h:column>
+                            <fcore:facet name="header">Order ID</fcore:facet>
+                            <h:outputText value="#{list.orderID}"/>
+                        </h:column>
+                        <!--<h:column>
+                            <fcore:facet name="header">Edit</fcore:facet>
+                            <h:commandLink action="edit_order"  actionListener="" value="Edit">
+                                <fcore:param name="id" value="#{list.id}"/>
+                            </h:commandLink>
+                        </h:column>-->
+                        <h:column>
+                            <fcore:facet name="header">Delete</fcore:facet>
+                            <h:commandLink action="welcome"  actionListener="#{listClients.delete()}" value="Delete" onclick="return confirm('Are You Sure ?')">
+                                <fcore:param name="clientID" value="#{list.clientID}"/>
+                            </h:commandLink>
+                        </h:column>
+                    </h:dataTable>
+                    
+                    <div class="addButton-class">
+                    <h:commandLink class="addOrderButton" value="Add Client" action="addClient" />
+                    <h:commandLink class="cancelButton" value="Cancel" action="welcome" immediate="true" />
+                    </div>
+                    
+                </h:form>
+            </fcore:view>
+            
+            </center>
+                </div>
+            </fcore:view>
+        </center>
+    </h:body>
+</html>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    
+    <head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>RWDoors</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet"/>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css"/>
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css"/>
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet"/>
+  <link href="css/gallery.css" rel="stylesheet"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+    
+    
+    
+<h:body>
+      <header class="gallery">
+    <h1 class="center"><span class="kristi highlight">our</span><br/> Gallery</h1>
+  </header>
+    <ui:include src="nav.xhtml"></ui:include>
+
+
+ <div class="container">
+
+    <div class="row">
+        <ui:repeat value="#{imageBean.images}" var="img">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="#{img.description}" alt=""></img>
+             
+                  <div class="overlay">
+                      <h2>#{img.name}</h2>
+      				<p>
+                                    <a target="_blank" href="#{img.description}">View</a>
+      				</p>
+                  </div>
+              <div class="remove">
+                     <button type="button" class="btn btn-danger left remove">Delete</button>
+              </div>
+            </div>
+           </div>
+        </ui:repeat>
+
+    </div>
+ </div>
+
+
+    <ui:include src="footer.xhtml"></ui:include>
+          <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/new-age.min.js"></script>
+   <script src="js/Gallery.js"></script>
+</h:body>
+</html>

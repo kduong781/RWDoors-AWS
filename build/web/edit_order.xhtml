@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:fcore="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+        
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        
+        <title>RWDoors</title>
+        
+        <!-- Theme CSS -->
+        <link href="css/orderStyle.css" rel="stylesheet"/>
+        <link href="css/new-age.css" rel="stylesheet"/>
+        
+    </h:head>
+    <h:body>
+        <center>
+            <fcore:view>
+                <h:form>
+                    <h1>Editing Order</h1>
+                    <h:panelGrid border="" cellpadding="20" cellspacing="20" columns="3">
+                        <h:outputLabel value="Order Id" />
+                        <h:inputText value="#{orderBean.id}" readonly="true" required="true" requiredMessage="Id is Required" id="Oid">
+                        </h:inputText> <h:message for="Oid"/>
+                        
+                        <h:outputLabel value="Order Name" />
+                        <h:inputText value="#{orderBean.name}" required="true" requiredMessage="Name is Required" id="Oname">
+                            
+                        </h:inputText> <h:message for="Oname"/>
+                        <h:outputLabel value="Material" />
+                        <h:inputText value="#{orderBean.material}" required="true" requiredMessage="Material is Required" id="Omaterial">
+                             
+                        </h:inputText><h:message for="Omaterial"/>
+                        <h:outputLabel value="Size" />
+                        <h:inputText value="#{orderBean.size}" required="true" requiredMessage="Size is Required" id="Osize">
+                             
+                        </h:inputText><h:message for="Osize"/>
+                        <h:outputLabel value="Style" />
+                        <h:inputText value="#{orderBean.style}" required="true" requiredMessage="Style is Required" id="Ostyle">
+                            
+                        </h:inputText> <h:message for="Ostyle"/>
+                        <h:outputLabel value="Description" />
+                        <h:inputText value="#{orderBean.description}" required="false" id="Odescription">
+                            
+                        </h:inputText> <h:message for="Odescription"/>   
+                        <h:outputLabel value="Status" />
+                        <h:inputText value="#{orderBean.status}" required="true" requiredMessage="Status is Required" id="Ostatus">
+                            
+                        </h:inputText> <h:message for="Ostatus"/>
+                        <h:commandLink class="updateButton" value="Update Order" action="changeOrder" actionListener="#{orderBean.update()}">
+                            <fcore:param name="id" value="#{orderBean.id}"/>
+                        </h:commandLink>
+                        <h:commandLink class="cancelButton" value="Cancel" action="changeOrder" immediate="true" />
+                        
+                    </h:panelGrid>
+                </h:form>
+            </fcore:view>
+        </center>
+    </h:body>
+</html>
+

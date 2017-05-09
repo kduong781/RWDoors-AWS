@@ -1,0 +1,9 @@
+#about {
+  background-image:url(../img/about_background2.jpg);
+	
+    background-position: 50% 0%;
+	background-repeat:no-repeat;
+	color:white;
+	font-size:20px;
+	font:bold;
+}
