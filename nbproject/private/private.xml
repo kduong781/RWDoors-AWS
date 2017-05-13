@@ -3,11 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/login.xhtml</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/Image.java</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/userUpload.java</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/UserBean.java</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/add_order.xhtml</file>
-            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/welcome.xhtml</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/css/gallery.css</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/OrderBean.java</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/about.html</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/imageBean.java</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/about.xhtml</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/AddClientBean.java</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/login.xhtml</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/UploadServlet.java</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/DeleteServlet.java</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/welcome.xhtml</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/EditClientBean.java</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/ListClients.java</file>
         </group>
     </open-files>
 </project-private>

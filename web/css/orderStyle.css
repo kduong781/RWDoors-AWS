@@ -8,11 +8,13 @@ and open the template in the editor.
     Author     : kaibeOh24
 */
 
+/*
 .order-page {
-  /*width: 360px;*/
+  width: 360px;
   padding: 8% 0 10%;
   margin: auto;
 }
+ */
 
 .addButton-class {
   padding-top: 2%;
@@ -90,11 +92,10 @@ body {
 
 }
 
-.addOrderButton {
+.addOrderButton, .addClientButton {
   background-color: black;
   color: white;
   border-radius: 8px;
-  
   padding: 10px 25px;
   border: none;
   text-decoration: none;
@@ -132,6 +133,17 @@ body {
   margin: auto;
 }
 
-.addOrderButton:hover, .updateButton:hover, .SaveAndAddButton:hover, cancelButton:hover, .backButton:hover {
+.addOrderButton:hover, .updateButton:hover, .SaveAndAddButton:hover, cancelButton:hover, .backButton:hover, .addClientButton:hover {
   text-decoration: none;
+}
+
+
+a {
+    color:#337ab7;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
 }

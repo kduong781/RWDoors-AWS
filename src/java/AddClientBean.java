@@ -18,15 +18,8 @@ import javax.enterprise.context.RequestScoped;
 @RequestScoped
 public class AddClientBean implements Serializable {
 
-    private int clientID, orderID;
+    private int orderID;
 
-    public int getClientID() {
-        return clientID;
-    }
-
-    public void setClientID(int clientID) {
-        this.clientID = clientID;
-    }
 
     public int getOrderID() {
         return orderID;
@@ -79,10 +72,9 @@ public class AddClientBean implements Serializable {
 //here sonoo is database name, root is username and password  
                        
             Statement stmt = con.createStatement();
-            stmt.execute("insert into clients (clientID, firstname, "
+            stmt.execute("insert into clients (firstname, "
                     + "lastname, email, phone, orderID) values "
-                    + "( "+clientID+
-                    ", \""+firstName+"\", \""+lastName+"\", \""+email+"\", \""+phone+"\", "+orderID+");");
+                    + "( '"+firstName+"\', \'"+lastName+"\', \'"+email+"\', \'"+phone+"\', "+orderID+");");
             
             /**while (rs.next()) {
                 System.out.println(rs.getInt(1) + rs.getString(2));

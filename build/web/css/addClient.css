@@ -8,56 +8,54 @@ and open the template in the editor.
     Author     : hecto
 */
 
- #addClient{
+#addClient{
     padding:0px 0px 10px 0px;
-  }
-  
-  .divHeight{
-      height: 300px;
-      margin-bottom: 100px;
-      margin-top:60px;
-      padding: 5% 0 5%;
-  }
-  
-  .submitButton {
-  width:100px; 
-  margin-left: auto; 
-  margin-right: auto;
 }
 
-.cancelButton {
-  width:100px; 
-  margin-left: 50px; 
-  margin-right: auto;
+.divHeight{
+    height: 300px;
+    margin-bottom: 100px;
+    margin-top:60px;
+    padding: 5% 0 5%;
 }
 
- #contact{
+.submitButton {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 5px 15px;
+    border: none;
+    text-decoration: none;
+    margin: auto;
+}
+
+#contact{
     padding:0px 0px 10px 0px;
-  }
-  
+}
 
- .cMessage{
-   padding: 10px;
- }
- .fix {
-  margin-top: 25px;	 
- }
 
-  .contact-text{
+.cMessage{
+    padding: 10px;
+}
+.fix {
+    margin-top: 25px;	 
+}
+
+.contact-text{
     margin:45px auto;
-  }
+}
 
-  .mail-message-area{
+.mail-message-area{
     width:100%;
     padding:0 15px;
-  }
-  
-  .contactUsMessage{
-	margin-top: 30px;  
-	padding: 5px;
-  }
+}
 
-  .mail-message{
+.contactUsMessage{
+    margin-top: 30px;  
+    padding: 5px;
+}
+
+.mail-message{
     width: 100%;
     background:rgba(255,255,255, 0.8) !important;
     -webkit-transition: all 0.7s;
@@ -65,29 +63,29 @@ and open the template in the editor.
     transition: all 0.7s;
     margin:0 auto;
     border-radius: 0;
-	
-  }
 
-  .not-visible-message{
+}
+
+.not-visible-message{
     height:0px;
     opacity: 0;
-  }
+}
 
-  .visible-message{
+.visible-message{
     height:auto;
     opacity: 1;
     margin:25px auto 0;
-  }
+}
 
 .divOrg{
-   margin-top: 50px;
-   margin-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 
 /* Input Styles */
 
-  .form{
+.form{
     width: 85%;
     padding: 15px;
     background:#f8f8f8;
@@ -98,46 +96,46 @@ and open the template in the editor.
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-	margin-left: 85px;
-  }
-  
-  /*
-  .crazyForm{
-    background-color: #f8f8f8;
-    background: -webkit-linear-gradient(bottom, #5b5954, #c6c3bc 175px);
-    background: -moz-linear-gradient(bottom, #5b5954, #c6c3bc 175px);
-    background: linear-gradient(bottom, #5b5954, #c6c3bc 175px);
-	-webkit-box-shadow: 0px 0px 8px rgba(40, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
-    border: 1px solid #999;
-    border: inset 1px solid #333;
-	width: 85%;
-	margin-left: auto;
-	margin-right: auto;
-    height: 200px;
-  }
-  */
-  .form:hover{
-    border:1px solid #8BC3A3;
-  }
+    margin-left: 85px;
+}
 
-  .form:focus{
+/*
+.crazyForm{
+  background-color: #f8f8f8;
+  background: -webkit-linear-gradient(bottom, #5b5954, #c6c3bc 175px);
+  background: -moz-linear-gradient(bottom, #5b5954, #c6c3bc 175px);
+  background: linear-gradient(bottom, #5b5954, #c6c3bc 175px);
+      -webkit-box-shadow: 0px 0px 8px rgba(40, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+  height: 200px;
+}
+*/
+.form:hover{
+    border:1px solid #8BC3A3;
+}
+
+.form:focus{
     color: white;
     outline: none;
     border:1px solid #8BC3A3;
-  }
+}
 
-  .textarea{
+.textarea{
     height: 200px;
     max-height: 200px;
     max-width: 70%;
-  }
+}
 
 /* Generic Button Styles */
 
-  .button{
+.button{
     padding:8px 12px;
     background:#0A5175;
     display: block;
@@ -152,16 +150,16 @@ and open the template in the editor.
     box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  }
+}
 
-  .button:hover{
+.button:hover{
     background:#8BC3A3;
     color:white;
-  }
+}
 
 /* Send Button Styles */
 
-  .form-btn{
+.form-btn{
     width:180px;
     display: block;
     height: auto;
@@ -178,22 +176,22 @@ and open the template in the editor.
     box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  }
+}
 
-  .form-btn:hover{
+.form-btn:hover{
     background:#111;
     color: white;
     border:none;
-  }
+}
 
-  .form-btn:active{
+.form-btn:active{
     opacity: 0.9;
-  }
-  
-  
-  .backPic{
-	  background: #fdcc52;
-  }
+}
+
+
+.backPic{
+    background: #fdcc52;
+}
 
 input {
     position: relative;
@@ -204,25 +202,25 @@ input {
 
 
 header {
-  height: 300px !important;
-  min-height: 20%;
-  margin-top: 0px;
-  background: url("../img/contactUs.png");
+    height: 300px !important;
+    min-height: 20%;
+    margin-top: 0px;
+    background: url("../img/contactUs.png");
 }
 
 header .center {
-  text-align: center;
-  padding-top: 4.4em;
+    text-align: center;
+    padding-top: 4.4em;
 }
 
 
 
 
 #map {
-   width: 80%;
-   height: 400px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 50px;
-   background-color: grey;
- }
+    width: 80%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color: grey;
+}

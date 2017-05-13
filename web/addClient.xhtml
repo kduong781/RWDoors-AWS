@@ -18,7 +18,6 @@
 
         <!-- Theme CSS -->
         <link href="css/orderStyle.css" rel="stylesheet"/>
-        <link href="css/new-age.css" rel="stylesheet"/>
         <link href="css/addClient.css" rel="stylesheet"/>
         
         
@@ -31,31 +30,31 @@
                 <h:form>
                     <h1>Add New Client</h1>
                     <h:panelGrid border="" cellpadding="20" cellspacing="20" columns="3">
-                        <h:outputLabel value="Client ID" />
-                        <h:inputText id ="clientID" required="true" requiredMessage="Please input client id" size ="5" maxlength="5" value="#{addClientBean.clientID}">
+                        <!--  <h:outputLabel value="Client ID" />
+                        <h:inputText id ="clientID" required="true" requiredMessage="Please input client id" size ="5" maxlength="5" value="">
                         
-                        </h:inputText><h:message for="OclientID"/>
+                        </h:inputText><h:message for="OclientID"/>  -->
                         <h:outputLabel value="Order ID" />
                         <h:inputText id ="orderID" required="true" requiredMessage="Please input order id" size ="5" maxlength="5" value="#{addClientBean.orderID}">
                              
                         </h:inputText><h:message for="OorderID"/>
                         <h:outputLabel value="First Name" />
-                        <h:inputText id ="firstName" required="true" requiredMessage="Please client first name" size ="10" maxlength="10" value="#{addClientBean.firstName}">
+                        <h:inputText id ="firstName" required="true" requiredMessage="Please client first name" value="#{addClientBean.firstName}">
                              
                         </h:inputText><h:message for="Ofirstname"/>
                         <h:outputLabel value="Last Name" />
-                       <h:inputText id ="lastName" required="true" requiredMessage="Please input client last name" size ="10" maxlength="10" value="#{addClientBean.lastName}">
+                       <h:inputText id ="lastName" required="true" requiredMessage="Please input client last name" value="#{addClientBean.lastName}">
                             
                         </h:inputText> <h:message for="OlastName"/>
                         <h:outputLabel value="Email" />
-                        <h:inputText id ="email" required="true" requiredMessage="Please input client email" size ="10" maxlength="10" value="#{addClientBean.email}">
+                        <h:inputText id ="email" required="true" requiredMessage="Please input client email" maxlength="20" value="#{addClientBean.email}">
                         
                         </h:inputText> <h:message for="Oemail"/>   
                         <h:outputLabel value="Phone" />
-                        <h:inputText id ="phone" required="true" requiredMessage="Please input client phone" size ="10" maxlength="30" value="#{addClientBean.phone}">
+                        <h:inputText id ="phone" required="true" requiredMessage="Please input client phone" maxlength="20" value="#{addClientBean.phone}">
                             
                         </h:inputText> <h:message for="Ophone"/>
-                        <h:commandLink class="SaveAndAddButton" value="submit" action="welcome" actionListener="#{addClientBean.print()}" onclick="return confirm('Are you sure?')"/>
+                        <h:commandLink class="submitButton" value="Submit" action="welcome" actionListener="#{addClientBean.print()}" onclick="return confirm('Are you sure?')"/>
                         <h:commandLink class="cancelButton" value="Cancel" action="welcome" immediate="true" />
                             
                     </h:panelGrid>

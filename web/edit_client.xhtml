@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:fcore="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+        
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        
+        <title>RWDoors</title>
+        
+        <!-- Theme CSS -->
+        <link href="css/orderStyle.css" rel="stylesheet"/>
+     
+        
+    </h:head>
+    <h:body>
+        <center>
+            <fcore:view>
+                <h:form>
+                    <h1>Editing Client</h1>
+                    <h:panelGrid border="" cellpadding="20" cellspacing="20" columns="3">
+                        <h:outputLabel value="Client ID" />
+                        <h:inputText value="#{editClientBean.clientID}" readonly="true" required="true" requiredMessage="Id is Required" id="clientID">
+                        </h:inputText> <h:message for="Cid"/>
+                        
+                        <h:outputLabel value="First Name" />
+                        <h:inputText value="#{editClientBean.firstName}" required="true" requiredMessage="First name is Required" id="firstname">
+                          </h:inputText> <h:message for="fName"/>    
+                          
+                           <h:outputLabel value="Last Name" />
+                           <h:inputText value="#{editClientBean.lastName}" required="true" requiredMessage="First name is Required" id="lastname">
+                          </h:inputText> <h:message for="lName"/>  
+                          
+                           <h:outputLabel value="Email" />
+                        <h:inputText value="#{editClientBean.email}" required="true" requiredMessage="Email is Required" id="email">
+                          </h:inputText> <h:message for="email"/>  
+                        
+                           <h:outputLabel value="Phone" />
+                        <h:inputText value="#{editClientBean.phone}" required="true" requiredMessage="Phone is Required" id="phone">
+                          </h:inputText> <h:message for="phone"/>  
+                            
+                           <h:outputLabel value="Order ID" />
+                           <h:inputText value="#{editClientBean.orderID}" required="true" requiredMessage="OrderID is Required" id="orderID">
+                          </h:inputText> <h:message for="Oid"/>  
+                            
+                          <h:commandLink class="updateButton" value="Update Client" action="listClients" actionListener="#{editClientBean.update()}">
+                            <fcore:param name="clientID" value="#{editClientBean.clientID}"/>
+                        </h:commandLink>
+                        <h:commandLink class="backButton" value="Cancel" action="listClients" immediate="true" />
+                        
+                    </h:panelGrid>
+                </h:form>
+            </fcore:view>
+        </center>
+    </h:body>
+</html>
+

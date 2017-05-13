@@ -16,7 +16,7 @@
         
         <!-- Theme CSS -->
         <link href="css/orderStyle.css" rel="stylesheet"/>
-        <link href="css/new-age.css" rel="stylesheet"/>
+    
         
     </h:head>
     <h:body>
@@ -25,7 +25,7 @@
                 <h:form>
                     <h1>Editing Order</h1>
                     <h:panelGrid border="" cellpadding="20" cellspacing="20" columns="3">
-                        <h:outputLabel value="Order Id" />
+                        <h:outputLabel value="Order ID" />
                         <h:inputText value="#{orderBean.id}" readonly="true" required="true" requiredMessage="Id is Required" id="Oid">
                         </h:inputText> <h:message for="Oid"/>
                         
@@ -46,9 +46,9 @@
                             
                         </h:inputText> <h:message for="Ostyle"/>
                         <h:outputLabel value="Description" />
-                        <h:inputText value="#{orderBean.description}" required="false" id="Odescription">
-                            
-                        </h:inputText> <h:message for="Odescription"/>   
+                        <h:inputTextarea value="#{orderBean.description}" cols="16" rows="3" required="false" id="Odescription">
+                        
+                        </h:inputTextarea> <h:message for="Odescription"/>   
                         <h:outputLabel value="Status" />
                         <h:inputText value="#{orderBean.status}" required="true" requiredMessage="Status is Required" id="Ostatus">
                             

@@ -180,11 +180,9 @@ public class UserBean implements Serializable {
     public String checkSession() {
         HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
         if(session.getAttribute("user") == null){
-            return null;
-            //return "Sign In";
+            return "Sign In";
     	} else {
-            return "Account";
-            //return "Logout";
+            return "Logout";
         }
     }
     
