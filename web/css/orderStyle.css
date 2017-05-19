@@ -112,7 +112,7 @@ body {
   margin-left: 30px;
 }
 
-.updateButton, .SaveAndAddButton {
+.updateButton, .SaveAndAddButton, .submitButton {
   background-color: black;
   color: white;
   border-radius: 8px;
@@ -133,7 +133,7 @@ body {
   margin: auto;
 }
 
-.addOrderButton:hover, .updateButton:hover, .SaveAndAddButton:hover, cancelButton:hover, .backButton:hover, .addClientButton:hover {
+.addOrderButton:hover, .updateButton:hover, .SaveAndAddButton:hover, .cancelButton:hover, .backButton:hover, .addClientButton:hover, .submitButton:hover {
   text-decoration: none;
 }
 

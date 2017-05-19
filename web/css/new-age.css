@@ -170,6 +170,11 @@ header {
     background: url("../img/door.jpeg");
 }
 
+.img-responsive {
+    padding-top: 15%;
+    height: 400px;
+    width: 350px;
+}
 /*
 #about {
     background-image:url(../img/about_background2.jpg);

@@ -54,10 +54,10 @@ public class AuthorizationFilter implements Filter {
                     reqURI.indexOf("/edit_client.xhtml") >= 0 ||
                     reqURI.indexOf("/edit_order.xhtml") >= 0 ||
                     reqURI.indexOf("/listClients.xhtml") >= 0) {
-                resp.sendRedirect(reqt.getContextPath() + "/faces/login.xhtml");
+                resp.sendRedirect(reqt.getContextPath() + "/login.xhtml");
             } else {
                 //System.out.println("STRING HERE: "+reqt.getContextPath());
-                resp.sendRedirect(reqt.getContextPath() + "/faces/index.xhtml");
+                resp.sendRedirect(reqt.getContextPath() + "/index.xhtml");
             }
 
         } catch (Exception e) {

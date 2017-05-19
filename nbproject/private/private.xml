@@ -11,6 +11,7 @@
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/OrderBean.java</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/about.html</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/imageBean.java</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/css/orderStyle.css</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/about.xhtml</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/AddClientBean.java</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/login.xhtml</file>
@@ -18,6 +19,8 @@
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/DeleteServlet.java</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/welcome.xhtml</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/EditClientBean.java</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/web/contactUs.xhtml</file>
+            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/AuthorizationFilter.java</file>
             <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/RWDoors-AWS/src/java/ListClients.java</file>
         </group>
     </open-files>
